@@ -1,0 +1,15 @@
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/bin/Debug/net6.0/ApproachToCleanCode
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/bin/Debug/net6.0/ApproachToCleanCode.deps.json
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/bin/Debug/net6.0/ApproachToCleanCode.runtimeconfig.json
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/bin/Debug/net6.0/ApproachToCleanCode.dll
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/bin/Debug/net6.0/ref/ApproachToCleanCode.dll
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/bin/Debug/net6.0/ApproachToCleanCode.pdb
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.csproj.AssemblyReference.cache
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.GeneratedMSBuildEditorConfig.editorconfig
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.AssemblyInfoInputs.cache
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.AssemblyInfo.cs
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.csproj.CoreCompileInputs.cache
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.dll
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ref/ApproachToCleanCode.dll
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.pdb
+/Users/okany/RiderProjects/ApproachToCleanCode/ApproachToCleanCode/obj/Debug/net6.0/ApproachToCleanCode.genruntimeconfig.cache

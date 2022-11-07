@@ -1,31 +1,27 @@
-using ApproachToCleanCode.SOLID.OpenClosedPrinciple;
-
 namespace ApproachToCleanCode.SOLID.DependencyInversion.BadSample;
 
-public class PrettyFormatter
+public class BadSample
 {
-    // Format tipleri
-    public enum FormatTypes
+    public void Process()
     {
-        Json,
-        Html
+        var car = new Car();
+        car.Drive();
     }
+}
 
-    // Formatlama işlemini yapacak olan nesneler
-    private JsonFormatter _jsonFormatter = new JsonFormatter();
-    private HtmlFormatter _htmlFormatter = new HtmlFormatter();
-
-    // Formatlama işlemini yapan metod
-    public string Format(FormatTypes inputType, string input)
-    {
-        switch (inputType)
-        {
-            case FormatTypes.Json:
-                return _jsonFormatter.Format(input);
-            case FormatTypes.Html:
-                return _htmlFormatter.Format(input);
-            default:
-                throw new Exception("Desteklenmeyen format tipi!");
-        }
+public class Car
+{
+    private DieselEngine engine = new DieselEngine();
+     
+    public void Drive() {    
+        string engineStart = engine.start();
     }
+}
+
+public class DieselEngine {
+    
+    public string start() {
+        return "DieselEngine started ";
+    }
+    
 }

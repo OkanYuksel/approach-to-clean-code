@@ -6,11 +6,11 @@ public class BadSample
     {
         Car car = new Bmw();
         car.EngineStart();
-        car.CarAirConditioner();
+        car.CarAirConditionerStart();
         
         Car secondaryCar = new Dacia();
         secondaryCar.EngineStart();
-        secondaryCar.CarAirConditioner();
+        secondaryCar.CarAirConditionerStart();
     }
 }
 
@@ -21,7 +21,7 @@ public abstract class Car
         return "Engine started.";
     }
 
-    public virtual string CarAirConditioner()
+    public virtual string CarAirConditionerStart()
     {
         return "Air conditioner started.";
     }
@@ -34,7 +34,7 @@ public class Bmw : Car
         return "Bmw's engine started.";
     }
 
-    public override string CarAirConditioner()
+    public override string CarAirConditionerStart()
     {
         return "Bmw's air conditioner started.";
     }
@@ -47,7 +47,7 @@ public class Dacia : Car
         return "Dacia's started.";
     }
     
-    public override string CarAirConditioner()
+    public override string CarAirConditionerStart()
     {
         throw new NotImplementedException();
     }

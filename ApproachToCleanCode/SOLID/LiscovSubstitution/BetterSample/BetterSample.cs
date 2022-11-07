@@ -6,7 +6,7 @@ public class BetterSample
     {
         var car = new Bmw();
         car.EngineStart();
-        car.CarAirConditioner();
+        car.CarAirConditionerStart();
         
         var secondaryCar = new Dacia();
         secondaryCar.EngineStart();
@@ -19,12 +19,11 @@ public abstract class Car
     {
         return "Engine started.";
     }
-    
 }
 
 public interface IAirConditioner
 {
-    string CarAirConditioner();
+    string CarAirConditionerStart();
 }
 
 public class Bmw : Car, IAirConditioner
@@ -34,7 +33,7 @@ public class Bmw : Car, IAirConditioner
         return "Bmw's engine started.";
     }
 
-    public string CarAirConditioner()
+    public string CarAirConditionerStart()
     {
         return "Bmw's air conditioner started.";
     }

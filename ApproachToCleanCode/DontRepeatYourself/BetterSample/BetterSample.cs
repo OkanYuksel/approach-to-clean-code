@@ -1,7 +1,9 @@
 namespace ApproachToCleanCode.DontRepeatYourself.BetterSample;
 
-// Modüler, tekrar tekrar kullanılabilir metotlar yazmalıyız. 
-// Kod tekrarına düşersek sorun kaçınılmaz olur.
+/// <summary>
+/// Modüler, tekrar tekrar kullanılabilir metotlar yazmalıyız. 
+/// Kod tekrarına düşersek sorun kaçınılmaz olur.
+/// </summary>
 public class BetterSample
 {
     private TemperatureDomainService _temperatureDomainService;

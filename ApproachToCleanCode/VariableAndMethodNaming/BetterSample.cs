@@ -1,9 +1,11 @@
 namespace ApproachToCleanCode.VariableAndMethodNaming;
 
-// anlamlı isimlendirmelere sahip
-// telafuz edilebilir isimler tartışmayı kolaylaştırıyor
-// searchable
-// comment e ihtiyaç yok.
+/// <summary>
+/// Anlamlı isimlendirmelere sahip
+/// Telafuz edilebilir isimler tartışmayı kolaylaştırıyor
+/// Searchable
+/// Comment e ihtiyaç yok.
+/// </summary>
 public class BetterSample
 {
     public double CalculateDistanceInKmBetweenPoints(Point firstPoint, Point secondPoint)

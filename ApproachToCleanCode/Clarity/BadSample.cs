@@ -11,8 +11,6 @@ public class BadSample
 
     public async Task<bool> CreateUser(UserInput input)
     {
-        var validUserTypes = new[] {"regular", "premium", "trial"};
-
         User user;
         switch (input.UserType)
         {
@@ -29,7 +27,7 @@ public class BadSample
                 break;
             default:
                 throw new ArgumentOutOfRangeException(
-                    $"Invalid user type. Must be one of the following {string.Join(" ", validUserTypes)}");
+                    $"Invalid user tag.");
         }
 
         bool result = await _userRepository.CreateAsync(user);

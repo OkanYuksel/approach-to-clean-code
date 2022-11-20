@@ -1,5 +1,8 @@
 namespace ApproachToCleanCode.UsingTheConditionalAccessOperator;
 
+/// <summary>
+/// null check için conditional access operatörünü tercih edebiliriz.
+/// </summary>
 public class BetterSample
 {
     private const string SeniorTag = "senior";

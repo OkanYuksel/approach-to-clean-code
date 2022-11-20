@@ -1,8 +1,9 @@
 namespace ApproachToCleanCode.SOLID.SingleResponsibilityPrinciple;
 
-// AddressService class ı ve ChangeAddress metodu sadece adresle ilgileniyor ve sadece adresten sorumlu.
-// LoginService in de sorumluluğu belirli. Değişikliklerde birbirlerinden etkilenmiyorlar.
-
+/// <summary>
+/// AddressService class ı ve ChangeAddress metodu sadece adresle ilgileniyor ve sadece adresten sorumlu.
+/// LoginService in de sorumluluğu belirli. Değişikliklerde birbirlerinden etkilenmiyorlar.
+/// </summary>
 public class LoginService{
     public void Login(string username) {
         //log-in logic 

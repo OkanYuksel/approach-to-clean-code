@@ -4,8 +4,10 @@ namespace ApproachToCleanCode.DontHaveSideEffects.BetterSample;
 
 public class UserValidator
 {
-    /* CheckPassword metodu içerisindeki Session.Initialize() metodu kaldırılmalı
-     ya da CheckPassword metodunun adı CheckPasswordAndInitializeSession olarak değiştirilmeli.*/
+    /// <summary>
+    /// CheckPassword metodu içerisindeki Session.Initialize() metodu kaldırılmalı
+    /// Ya da CheckPassword metodunun adı CheckPasswordAndInitializeSession olarak değiştirilmeli.
+    /// </summary>
     private Cryptographer _cryptographer;
 
     public UserValidator()

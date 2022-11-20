@@ -1,5 +1,10 @@
 namespace ApproachToCleanCode.Clarity;
 
+/// <summary>
+/// User create etme işleminde kullanılan metotlara netlik kazandırmış olduk. Hepsinin görevi belli.
+/// Değişkenler tekrar kullanım için hazır hale geldi.
+/// Key, tag gibi kavramlar için static class lar oluşturduk. Hardcoded değiller artık. Searchable oldular.
+/// </summary>
 public class BetterSample
 {
     public readonly IUserRepository _userRepository;
@@ -21,34 +26,43 @@ public interface ICreateUserInput
     User CreateUser();
 }
 
+public static class FeatureKeys
+{
+    public const string PremiumFeatureRead = "PremiumFeature.Read";
+    public const string PremiumFeatureCreate = "PremiumFeature.Create";
+}
+
+public static class UserTags
+{
+    public const string Regular = "regular";
+    public const string Premium = "premium";
+    public const string Trial = "trial";
+}
+
 public class CreateUserInput : ICreateUserInput
 {
-    private const string RegularTag = "regular";
-    private const string PremiumTag = "premium";
-    private const string TrialTag = "trial";
-    private static readonly string[] ValidUserTypes = {RegularTag, PremiumTag, TrialTag};
-
     public CreateUserInput(string userName, string userType)
     {
         UserName = userName;
         UserType = userType;
     }
 
-    public string UserName { get; private set; }
-    public string UserType { get; private set; }
+    private string UserName { get; set; }
+    private string UserType { get; set; }
 
     public User CreateUser()
     {
         return UserType switch
         {
-            RegularTag => new User(UserName),
-            PremiumTag => new User(UserName, new List<string>() {"PremiumFeature.Read", "PremiumFeature.Create"})
+            UserTags.Regular => new User(UserName),
+            UserTags.Premium => new User(UserName, 
+                new List<string>() {FeatureKeys.PremiumFeatureRead, FeatureKeys.PremiumFeatureCreate})
             {
                 IsPremium = true
             },
-            TrialTag => new User(UserName) {IsOnTrial = true},
+            UserTags.Trial => new User(UserName) {IsOnTrial = true},
             _ => throw new ArgumentOutOfRangeException(
-                $"Invalid user type. Must be one of the following {string.Join(" ", ValidUserTypes)}")
+                $"Invalid user tag.")
         };
     }
 }

@@ -1,9 +1,10 @@
 namespace ApproachToCleanCode.SOLID.DependencyInversion.BetterSample;
 
-// AutoCar engine ile ilgili bağımlılıklardan kurtuldu. Böylelikle daha kolay test yazılabilecek. 
-// Autocar sınıfı farklı engine türleriyle çalışabilir hale geldi.
-// Engine türlerinin birbirinden farklı özellikleri, metotları olabilir. Bu metotlar AutoCar sınıfını ilgilendirmez.
-
+/// <summary>
+/// AutoCar sınıfı engine sınıfları ile ilgili bağımlılıklarından kurtuldu. Böylelikle daha kolay geliştirme yapılabilecek ve test yazılabilecek.
+/// Autocar sınıfı farklı engine türleriyle çalışabilir hale geldi.
+/// Engine türlerinin birbirinden farklı özellikleri, metotları olabilir. Bu metotlar AutoCar sınıfını ilgilendirmez.
+/// </summary>
 public class BetterSample
 {
     public void Process()
@@ -12,6 +13,10 @@ public class BetterSample
         electricEngine.ChargeBattery();
         var electricCar = new AutoCar(electricEngine);
         electricCar.Drive();
+
+        var dieselEngine = new DieselEngine();
+        var dieselCar = new AutoCar(dieselEngine);
+        dieselCar.Drive();
         
         var gasolineEngine = new GasolineEngine();
         gasolineEngine.AddOilToEngine();
@@ -25,11 +30,6 @@ public class AutoCar : ICar
     IEngine _engine;
 
     public AutoCar(IEngine engine)
-    {
-        _engine = engine;
-    }
-
-    public void SetEngine(IEngine engine)
     {
         _engine = engine;
     }

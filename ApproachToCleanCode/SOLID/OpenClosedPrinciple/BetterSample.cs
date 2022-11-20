@@ -2,9 +2,11 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ApproachToCleanCode.SOLID.OpenClosedPrinciple;
 
-// Formatlama işlemini genel hatlarıyla tanımlayan bir ata sınıf tanımlayarak asıl işleri de türetilmiş sınıflara devrettik.
-// XmlFormatter eklenmek istendiğinde ilgili class ının PrettyFormatProvider dan türetilerek yazılması yeterli olacak.
-// Diğer classlar bu geliştirmeden etkilenmeyecekler. Böylelikle classlar gelişime açık, değişime kapalı olacaklar.
+/// <summary>
+/// Formatlama işlemini genel hatlarıyla tanımlayan bir ata sınıf tanımlayarak asıl işleri de türetilmiş sınıflara devrettik.
+/// XmlFormatter eklenmek istendiğinde ilgili class ının PrettyFormatProvider dan türetilerek yazılması yeterli olacak.
+/// Diğer classlar bu geliştirmeden etkilenmeyecekler. Böylelikle classlar gelişime açık, değişime kapalı olacaklar.
+/// </summary>
 
 // Soyut kontrat sınıfı (Ata Sınıf)
 public abstract class PrettyFormatProvider

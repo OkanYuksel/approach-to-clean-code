@@ -2,9 +2,11 @@ namespace ApproachToCleanCode.MeaningfulContext;
 
 public class BetterSample
 {
-    //metotların görevleri contextleri belirli.
-    //daha kolay maintain edilebilir.
-    //küçük ve single responsible metotlar
+    /// <summary>
+    /// Metotların görevleri contextleri belirli.
+    /// Daha kolay maintain edilebilir.
+    /// Küçük ve single responsible metotlar
+    /// </summary>
     public class GuessStatisticsMessage {
         private string number;
         private string verb;

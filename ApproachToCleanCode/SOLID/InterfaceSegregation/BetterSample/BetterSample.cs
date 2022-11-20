@@ -1,5 +1,9 @@
 namespace ApproachToCleanCode.SOLID.InterfaceSegregation.BetterSample;
 
+/// <summary>
+/// string Schema property si tüm sınıflarda implemente edilmek zorunda kalınmadı.
+/// Farklı tipler, contextler için interface ayrımına gitmemiz faydalı oluyor.
+/// </summary>
 public interface IPrettyFormatValidator
 {
     bool IsValid(string input);

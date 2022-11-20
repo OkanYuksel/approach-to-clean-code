@@ -20,7 +20,7 @@ public class BadSample
                 }
                 else
                 {
-                    throw new ArgumentException("Must be at least 18 characters");
+                    throw new ArgumentException("Must be at least 10 characters");
                 }
             }
             else
@@ -32,7 +32,5 @@ public class BadSample
         {
             throw new ArgumentException("Password must have a value", nameof(password));
         }
-
-        return true;
     }
 }

@@ -1,9 +1,10 @@
 namespace ApproachToCleanCode.CommandQuerySeperation;
 
-//  Read / write işlemler birbirinden izole. Safety.
-// Daha modüler, esnek
-// interfaceler küçük.
-
+/// <summary>
+/// Read / write işlemler birbirinden izole. Safety.
+/// Daha modüler, esnek
+/// Interfaceler küçük.
+/// </summary>
 public interface IOrderCommandRepository
 {
     public bool Add(Order order);

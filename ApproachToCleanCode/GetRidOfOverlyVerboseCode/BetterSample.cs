@@ -1,6 +1,9 @@
 namespace ApproachToCleanCode.GetRidOfOverlyVerboseCode;
 
-// Aşırı ayrıntılı kod bloğundan kurtulmuş olduk.
+/// <summary>
+/// Aşırı ayrıntılı kod bloğundan kurtulmuş olduk.
+/// Daha okunabilir, muhtemelen daha verimli (daha az maliyetli) ve performanslı çalışacak kod.
+/// </summary>
 public class BetterSample
 {
     public int? FindDuplicateBetter(IEnumerable<int> numbers)

@@ -1,5 +1,10 @@
 namespace ApproachToCleanCode.SOLID.LiscovSubstitution.BetterSample;
 
+/// <summary>
+/// Her özellik abstract class da bulunmamalı.
+/// Sonradan türetilen sınıflara eklenebilecek özellikler interfaceler üzerinden sınıflara eklenmeli ve sınıflar bu özellikleri implemente etmeliler.
+/// Böylelikle not implemented exceptionların ya da hatalı durumların önüne geçmiş oluruz.
+/// </summary>
 public class BetterSample
 {
     public void Process()

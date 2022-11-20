@@ -1,10 +1,12 @@
 namespace ApproachToCleanCode.CleaningUpConvolutedCode;
 
-// İç içe iflerin olduğu kod bloğundan kurtulmuş olduk.
+/// <summary>
+/// İç içe iflerin olduğu kod bloğundan kurtulmuş olduk.
+/// </summary>
 public class BetterSample
 {
     private const int MaxPasswordLength = 10;
-    public bool ValidatePasswordStrengthBetter(string password)
+    public bool IsValidPassword(string password)
     {
         if (string.IsNullOrEmpty(password))
             throw new ArgumentException("Cannot be null or empty");
